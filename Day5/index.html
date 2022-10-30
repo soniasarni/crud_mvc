@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GK</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script language="javascript" type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+    <h1 align="center">Ajax</h1>
+
+    <h3 align="center">Formulaire d'ajout d'un nouveau message</h3>
+
+    <div style="margin: 20px;" name="postMessage"></div>
+
+        <div class="form-group">
+            <label for="nom">Nom</label>
+            <input type="text" class="form-control" id="nom" placeholder="Enter nom">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+
+        <div class="form-group">
+            <label for="contenu">Message</label>
+            <textarea class="form-control" id="contenu" placeholder="taper votre message"></textarea>
+        </div>
+        <button onclick="insertData()" class="btn btn-primary">Submit</button>
+
+        <div>
+            <div align="center"><button onclick="load_message()" class="btn btn-success">Charger Data</button></div>
+            <div id="maDiv" align="center">Clic to load data</div>
+        </div>
+
+</body>
+
+</html>

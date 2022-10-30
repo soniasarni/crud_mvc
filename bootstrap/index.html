@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    
+<!--   
+<script>$(document).ready(function(){
+    $("p").click(
+        function(){
+alert("je suis l'alert")
+    });
+});
+</script>
+
+<p>formation jquery</p> -->
+
+
+
+<script>
+    $(document).ready(function(){
+               $("#pair").click(function(){
+                        $("p:even").toggle();
+               })
+    })
+    $(document).ready(function(){
+               $("#impair").click(function(){
+                        $("p:odd").toggle();
+               });
+    })
+    </script>
+<p>Loremici deserunt asperiores?</p>
+<p> ipsum dolor sit amet consectetur adipis</p>
+<p>ng elit. Doe nulla provident ipsam ex, quidem, quis</p>
+<p>ng elit. Dolores pestiaeprovident ipsam ex, quidem, quis</p>
+    <button id="pair">pair</button>
+    <button id="impair">impair</button>;
+
+
+ 
+
+  
+
+   </body>
+</html>
